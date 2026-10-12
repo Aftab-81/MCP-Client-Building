@@ -1,0 +1,26 @@
+[project]
+name = "youtube-mcp-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aftabalam Makandar", email = "makandaraftabalam@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=4.1.0",
+    "langchain[mcp]>=1.4.4",
+    "langchain-huggingface>=1.2.3",
+    "mcp>=2.3.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.65.0",
+    "langchain-openai>=1.7.0",
+    "langchain-openrouter>=0.2.9",
+]
+
+[project.scripts]
+youtube-mcp-client = "youtube_mcp_client:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
